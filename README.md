@@ -6,7 +6,7 @@ This engineering project implements a comprehensive **ETL (Extract, Transform, L
 ## Overview
 **Pipeline Workflow:**
 
-1. **Extract Tweets:** The Extract Tweets Task uses Selenium to scrape tweets from [Naval Ravikant](https://x.com/naval) Twitter (X) account. CSV file does not contain all the tweets; the selection is random and contains tweets with a large number of likes.
+1. **Extract Tweets:** The Extract Tweets Task uses Selenium to scrape tweets from [Naval Ravikant](https://x.com/naval) Twitter (X) account. CSV file does not contain all the tweets; the selection is not chronological and contains tweets with a large number of likes (tweets that first appear to a user who is not logged into Twitter (X).
 2. **Transform Data:** The Transform Data Task processes the collected tweets to remove irrelevant content and formats the data for clarity.
 3. **Load Data:** The Load to S3 Task uploads the transformed tweet data to an Amazon S3 bucket for long-term storage and potential future analysis.
 
